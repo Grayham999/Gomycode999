@@ -1,0 +1,154 @@
+body{
+    background-color: #03152b;
+    color: blue;
+}
+
+#black{
+    color: antiquewhite;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    line-height: 30px;
+    text-align: right;
+}
+
+.navbar ul{
+        list-style: none;
+        padding: ;
+}
+
+.navbar ul li{
+    display: inline;
+    padding: 7%;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0ed5e3;
+}
+
+.navbar{
+    position: relative;
+    font-size:16px ;
+    margin: 20px 0 40px;
+}
+
+.navbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#home{
+    height: 150vh;
+    background-size: 1500px;
+    background-position:right;
+    align-items: center;
+    display: flex;
+    padding: 0 10%;
+}
+
+#home-content{
+    max-width: 1000px;
+}
+
+#home-content h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1:2;
+}
+
+#home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: blue;
+}
+
+#home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#home-content ul{
+    position: relative;
+    font-size:20px ;
+    margin: 20px 0 40px;
+}
+
+#home-content ul::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+}
+
+#home-content h1{
+    position: relative;
+    font-size:40px ;
+    margin: 20px 0 40px;
+}
+
+#home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+
+/*KEYFRAME ANIMATIONS*/
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}

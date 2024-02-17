@@ -1,0 +1,301 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    background-color: #03152b;
+    color: antiquewhite;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    line-height: 50px;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+   color: antiquewhite;
+   position: relative;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-weight: 500;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 18px;
+    margin-left: 150px;
+    transition: .4s;
+}
+
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0ed5e3;
+}
+
+
+#home{
+    height: 100vh;
+    background: url(meeeee.jpeg)no-repeat;
+    background-size: 600px;
+    background-position:right;
+    align-items: center;
+    display: flex;
+    padding: 0 10%;
+
+}
+
+#home-content{
+    max-width: 600px;
+}
+
+#home-content h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1:2;
+}
+
+#home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: blue;
+}
+
+#home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#home-content p{
+    position: relative;
+    font-size:16px ;
+    margin: 20px 0 40px;
+}
+
+#home-content p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#home-content .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+#home-content .btn-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+    background: #03152b;
+    z-index: 2;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 80%;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:nth-child(2){
+    background-color: transparent;
+    color: blue;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: lightseagreen;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.home-sci::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+    background: #03152b;
+    z-index: 2;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid blue;
+    border-radius: 50%;
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a:hover{
+    color: black;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: blue;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+.home-imghover{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: .5s;
+    animation: manipActiveHover 1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+}
+
+.home-imghover:hover{
+    background: #03152b;
+    opacity: .8;
+}
+
+.home-imghover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+    background: #03152b;
+    z-index: 100;
+}
+
+
+/*KEYFRAME ANIMATIONS*/
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes manipActiveHover{
+    100%{
+        pointer-events: auto;
+    }
+}

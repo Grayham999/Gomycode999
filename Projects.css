@@ -1,0 +1,157 @@
+h1{
+    font-size: xx-large;
+    text-decoration: underline;
+    color: antiquewhite;
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.navbar {
+    position: sticky;
+    width: 100%;
+    background-color:transparent;
+    height: 60px;
+    line-height: 30px;
+    margin-left: 100px;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: ;
+}
+
+.navbar ul li{
+display: inline;
+padding: 7%;
+}
+
+.navbar  {
+    font-weight: 500;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 18px;
+    margin-left: 150px;
+    transition: .4s;
+}
+
+.navbar :hover,
+.navbar .active {
+    color: #0ed5e3;
+}
+
+.navbar{
+    position: relative;
+    font-size:16px ;
+    margin: 20px 0 40px;
+}
+
+.navbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+.myNav ul li a{
+text-decoration: none;
+color: white;
+}
+
+body{
+background-color: #03152b;
+color: antiquewhite;
+}
+
+#home{
+    color:blue;
+}
+
+#home{
+    height: 100vh;
+    background-size: 600px;
+    background-position:left;
+    align-items: left;
+    display: flex;
+
+}
+
+#home-content{
+    max-width: 1500px;
+}
+
+#home-content h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1:2;
+}
+
+#home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#home p{
+    position: relative;
+    font-size: 37px;
+    font-weight: 700;
+    color: blue;
+}
+
+#home p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+}
+
+#home ul{
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    color: blue;
+}
+
+#home ul::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #03152b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+}
+
+/*KEYFRAME ANIMATIONS*/
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
